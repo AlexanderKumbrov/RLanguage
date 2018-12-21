@@ -10,7 +10,7 @@ public class LessonLab {
     private static LessonLab lessonLab;
     private List<Lesson> mLesson;
 
-    private static LessonLab get(Context context){
+    static LessonLab get(Context context){
         if (lessonLab == null){
             lessonLab = new LessonLab(context);
         }
