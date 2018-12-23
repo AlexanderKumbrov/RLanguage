@@ -35,10 +35,10 @@ public class LessonsListFragment extends Fragment {
     }
 
     private class LessonHolder extends RecyclerView.ViewHolder{
-        public TextView mTitleTextView;
+        private TextView mTitleTextView;
         public LessonHolder (View itemView){
             super(itemView);
-            mTitleTextView = (TextView)itemView;        //Заголовок
+            mTitleTextView = (TextView)itemView.findViewById(R.id.less_title);       //Заголовок
         }
     }
 
@@ -54,7 +54,7 @@ public class LessonsListFragment extends Fragment {
         @Override
         public LessonHolder onCreateViewHolder (ViewGroup parent ,int viewType){
             LayoutInflater layoutInflater = LayoutInflater.from(getActivity());
-            View view = layoutInflater.inflate(android.R.layout.simple_list_item_1 , parent , false);
+            View view = layoutInflater.inflate(R.layout.item_list_lessons, parent , false);
             return new LessonHolder(view);
         }
 
