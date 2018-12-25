@@ -8,5 +8,4 @@ public class LessonsListActivity extends SingleCreateFragment {
     protected Fragment createFragment(){
         return new LessonsListFragment();
     }
-
 }
