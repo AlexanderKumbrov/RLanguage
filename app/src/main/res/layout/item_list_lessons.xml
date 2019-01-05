@@ -8,11 +8,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:elevation="3dp"
-        android:foreground="?attr/selectableItemBackground">
+        android:elevation="3dp">
      <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="#732980b9">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/image"

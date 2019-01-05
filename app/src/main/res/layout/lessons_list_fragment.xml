@@ -2,9 +2,9 @@
 <android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#3385ae"
     tools:context=".LessonsListActivity"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#3385ae">
 
 
 <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"

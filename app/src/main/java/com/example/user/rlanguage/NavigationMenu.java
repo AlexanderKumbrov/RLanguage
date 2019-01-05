@@ -1,13 +1,17 @@
 package com.example.user.rlanguage;
 
+import android.content.res.Resources;
+import android.graphics.Rect;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
+import android.util.TypedValue;
 import android.view.MenuItem;
+import android.view.View;
 
 public class NavigationMenu extends AppCompatActivity {
     @Override
@@ -29,7 +33,6 @@ public class NavigationMenu extends AppCompatActivity {
             Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.navigation_lessons:
-
                     return true;
                 case R.id.navigation_bookmark:
                     return true;
