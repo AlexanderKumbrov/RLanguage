@@ -1,17 +1,13 @@
 package com.example.user.rlanguage;
 
-import android.content.res.Resources;
-import android.graphics.Rect;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
 import android.view.MenuItem;
-import android.view.View;
 
 public class NavigationMenu extends AppCompatActivity {
     @Override
@@ -21,6 +17,8 @@ public class NavigationMenu extends AppCompatActivity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams)navigation.getLayoutParams();
+        layoutParams.setBehavior(new NavigationMenuHidden());
         loadFragment(new LessonsListFragment());
 
     }
