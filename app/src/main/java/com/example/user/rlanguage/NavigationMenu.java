@@ -11,6 +11,7 @@ import android.view.MenuItem;
 
 public class NavigationMenu extends AppCompatActivity {
     LessonsListFragment lessonsListFragment = new LessonsListFragment() ;
+    LessonsSettingsFragment lessonsSettingsFragment = new LessonsSettingsFragment();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +21,6 @@ public class NavigationMenu extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams)navigation.getLayoutParams();
         layoutParams.setBehavior(new NavigationMenuHidden());
-
-
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -38,6 +37,8 @@ public class NavigationMenu extends AppCompatActivity {
                 case R.id.navigation_bookmark:
                     return true;
                 case R.id.navigation_settings:
+                    fragment =(lessonsSettingsFragment);
+                    loadFragment(fragment);
                     return true;
             }
             return false;

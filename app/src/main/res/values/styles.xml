@@ -2,10 +2,25 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+        <!-- Light Mode. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">#3385ae</item>
+        <item name="textColor">#808080</item>
+        <item name="tintColor">#ffffff</item>
+        <item name="buttonColor">#27ae60</item>
+
+    </style>
+    <style name="NightMode" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Night mode. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">#05293b</item>
+        <item name="textColor">#e7dfdf</item>
+        <item name="tintColor">#ffffff</item>
+        <item name="buttonColor">#27ae60</item>
 
     </style>
 </resources>

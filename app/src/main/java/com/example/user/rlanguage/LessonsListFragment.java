@@ -98,6 +98,8 @@ public class LessonsListFragment extends Fragment {
             return  mLesson.size();
         }
     }
+
+    //Изменение элементов recycler view
     public class GridItemDecoration extends RecyclerView.ItemDecoration{
         private int spanCount;
         private int spacing ;
