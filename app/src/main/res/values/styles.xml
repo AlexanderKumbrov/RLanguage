@@ -6,10 +6,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="backgroundColor">#3385ae</item>
-        <item name="textColor">#808080</item>
+        <item name="backgroundColor">#9ab1bc</item>
+        <item name="textColor">#e9e9e9</item>
         <item name="tintColor">#ffffff</item>
         <item name="buttonColor">#27ae60</item>
+        <item name="backgroundTextColor">#bdc3c7</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
 
     </style>
     <style name="NightMode" parent="Theme.AppCompat.Light.NoActionBar">
@@ -21,6 +23,11 @@
         <item name="textColor">#e7dfdf</item>
         <item name="tintColor">#ffffff</item>
         <item name="buttonColor">#27ae60</item>
-
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+    
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 </resources>

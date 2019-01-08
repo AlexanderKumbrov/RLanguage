@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="?attr/backgroundColor">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,5 +13,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ipsum_lorem"/>
+        android:text="@string/ipsum_lorem"
+        android:textColor="?attr/textColor"/>
 </LinearLayout>
