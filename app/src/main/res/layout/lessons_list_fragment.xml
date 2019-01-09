@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".LessonsListActivity"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="?attr/backgroundColor">
+    android:background="?attr/backgroundColor"
+    android:layout_marginTop="40dp">
 
 
 <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"

@@ -9,15 +9,27 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class LessonsFragment extends Fragment {
+    SaveNightMod saveNightMod;
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+
     }
     @Override
     public View onCreateView(LayoutInflater inflater , ViewGroup container , Bundle savedInstanceState){
-        final Context context = new ContextThemeWrapper(getActivity(), R.style.NightMode);
-        View v = inflater.inflate(R.layout.lessons_fragment , container ,false);
-        return v;
+        saveNightMod = new SaveNightMod(getActivity());
+        if (saveNightMod.loadNightModState()==true){
+            final Context context = new ContextThemeWrapper(getContext(), R.style.NightMode);
+            LayoutInflater localInflater = inflater.cloneInContext(context);
+            return localInflater.inflate(R.layout.lessons_fragment , container , false);
+
+        }
+        else {
+            final Context context = new ContextThemeWrapper(getContext(), R.style.AppTheme);
+            LayoutInflater localInflater = inflater.cloneInContext(context);
+            return localInflater.inflate(R.layout.lessons_fragment , container , false);
+        }
+
     }
 
 }

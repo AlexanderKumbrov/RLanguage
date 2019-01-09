@@ -30,7 +30,7 @@ public class LessonsListFragment extends Fragment {
 
         mLessonRecycleView = (RecyclerView)view.findViewById(R.id.lesson_recycle_view);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(),2);
-        mLessonRecycleView.addItemDecoration(new GridItemDecoration(2 , dpToPx(8),true));
+        mLessonRecycleView.addItemDecoration(new GridItemDecoration(2 , dpToPx(20),true));
         mLessonRecycleView.setLayoutManager(layoutManager);
         updateUI();
         return view;
