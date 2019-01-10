@@ -63,7 +63,7 @@ public class LessonsListFragment extends Fragment {
         }
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(getActivity() , LessonsActivity.class);
+            Intent intent = new Intent(getActivity() , PagerActivity.class);
             startActivity(intent);
         }
     }
