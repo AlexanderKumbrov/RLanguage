@@ -6,6 +6,9 @@
         <attr name="tintColor" format="color" />
         <attr name="buttonColor" format="color" />
         <attr name="backgroundTextColor" format="color"/>
+        <attr name="bottomNavigationMenuColor" format="color"/>
+        <attr name="toolBarColor" format="color"/>
+        <attr name="titleColor" format="color"/>
 
     </declare-styleable>
 </resources>
