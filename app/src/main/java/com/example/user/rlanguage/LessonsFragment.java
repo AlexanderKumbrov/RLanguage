@@ -7,11 +7,14 @@ import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.UUID;
 
 public class LessonsFragment extends Fragment {
     SaveNightMod saveNightMod;
+    Lesson lesson;
+    TextView titleLessons;
     private final static String ARG_LESSONS_ID ="lesson_id";
     @Override
     public void onCreate(Bundle savedInstanceState){
@@ -35,12 +38,5 @@ public class LessonsFragment extends Fragment {
             return localInflater.inflate(R.layout.lessons_fragment , container , false);
 
         }
-    }
-    public static LessonsFragment newInstance(UUID lessonID){
-        Bundle args = new Bundle();
-        args.putSerializable(ARG_LESSONS_ID , lessonID);
-        LessonsFragment fragment = new LessonsFragment();
-        fragment.setArguments(args);
-        return fragment;
     }
 }
