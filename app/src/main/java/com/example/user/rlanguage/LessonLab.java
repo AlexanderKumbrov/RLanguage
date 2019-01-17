@@ -16,7 +16,8 @@ public class LessonLab {
         }
         return lessonLab;
     }
-    private LessonLab(Context context){
+
+    LessonLab(Context context){
 mLesson = new ArrayList<>();
 
 for (int i =0 ; i <20 ; i++){

@@ -16,5 +16,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ipsum_lorem"
-        android:textColor="?attr/textColor"/>
+        android:textColor="?attr/textColor"
+        android:id="@+id/lesson_ipsum_id"/>
 </LinearLayout>

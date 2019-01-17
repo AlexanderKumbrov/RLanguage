@@ -6,7 +6,9 @@ public class Lesson {
     private UUID idLess;
     private String titleLess;
 
-    public UUID getIdLess() {
+
+    public UUID getIdLess()
+    {
         return idLess;
     }
 
@@ -20,5 +22,7 @@ public class Lesson {
 
     public void setTitleLess(String titleLess) {
         this.titleLess = titleLess;
+
+
     }
 }

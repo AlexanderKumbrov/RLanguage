@@ -2,24 +2,27 @@ package com.example.user.rlanguage;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewCompat;
+import android.support.v4.view.ViewPager;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.UUID;
 
 public class LessonsFragment extends Fragment {
     SaveNightMod saveNightMod;
-    Lesson lesson;
-    TextView titleLessons;
     private final static String ARG_LESSONS_ID ="lesson_id";
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        UUID lessonID = (UUID)getArguments().getSerializable(ARG_LESSONS_ID);
+//        UUID lessonID = (UUID)getArguments().getSerializable(ARG_LESSONS_ID);
 
     }
 
@@ -39,4 +42,5 @@ public class LessonsFragment extends Fragment {
 
         }
     }
+
 }

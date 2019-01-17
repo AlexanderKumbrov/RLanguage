@@ -7,22 +7,22 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ViewPagerAdapter extends PagerAdapter {
 
     private Context context;
     private LayoutInflater layoutInflater;
-    private int [] lessons = {R.drawable.putpic1 ,R.drawable.putpic2,R.drawable.putpic3 };
-
+    private int[] ipsumLor = {R.string.lorem1 , R.string.lorem2 , R.string.lorem3};
+    Lesson lesson = new Lesson();
     public ViewPagerAdapter(Context context) {
 
-        this.context = context;
+          this.context = context;
     }
 
     @Override
     public int getCount() {
-        return lessons.length;
+        return ipsumLor.length;
     }
 
     @Override
@@ -34,9 +34,9 @@ public class ViewPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View view = layoutInflater.inflate(R.layout.put_layout,null);
-        ImageView imageView =(ImageView)view.findViewById(R.id.imageView);
-        imageView.setImageResource(lessons[position]);
+        View view = layoutInflater.inflate(R.layout.lessons_fragment,null);
+        TextView textView = (TextView)view.findViewById(R.id.lesson_ipsum_id);
+        textView.setText(ipsumLor[position]);
         ViewPager vp = (ViewPager) container;
         vp.addView(view ,0);
         return view;

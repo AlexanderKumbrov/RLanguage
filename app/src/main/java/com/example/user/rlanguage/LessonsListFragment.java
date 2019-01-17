@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.PagerAdapter;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -72,7 +73,7 @@ public class LessonsListFragment extends Fragment {
     //
     private class LessonAdapter extends RecyclerView.Adapter<LessonHolder>{
         private List <Lesson> mLesson;
-        public LessonAdapter (List <Lesson> lesson){
+        public LessonAdapter (List <Lesson> lesson) {
             mLesson = lesson;
         }
 
