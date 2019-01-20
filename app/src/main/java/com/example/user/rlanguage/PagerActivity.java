@@ -4,6 +4,7 @@ package com.example.user.rlanguage;
         import android.support.v4.app.Fragment;
         import android.support.v4.app.FragmentActivity;
         import android.support.v4.view.ViewPager;
+        import android.view.MotionEvent;
 
 
 public class PagerActivity extends FragmentActivity {
@@ -24,6 +25,7 @@ public class PagerActivity extends FragmentActivity {
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
         viewPager.setAdapter(viewPagerAdapter);
         saveNightMod = new SaveNightMod(this);
+
 
     }
 }
